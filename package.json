@@ -1,0 +1,26 @@
+{
+  "name": "frontend-fns",
+  "version": "0.2.2",
+  "description": "methods and constants for frontend web",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && NODE_ENV=production rollup -c",
+    "test": "NODE_ENV=production jest --coverage",
+    "prepublishOnly": "npm test && npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.5.5",
+    "lodash": "^4.17.15",
+    "qss": "^2.0.3"
+  },
+  "author": "Wang Zuo <wangzuo@swiftcarrot.com> (https://swiftcarrot.com)",
+  "license": "MIT"
+}
