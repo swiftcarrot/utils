@@ -50,3 +50,5 @@ export const IS_IOS =
   IS_BROWSER &&
   /iPad|iPhone|iPod/.test(navigator.userAgent) &&
   !window.MSStream;
+
+export const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));

@@ -1,11 +1,11 @@
-# frontend-fns
+# utils
 
-methods and constants for frontend web
+JavaScript utils
 
 ### Usage
 
 ```javascript
-import { uid, IS_BROWSER } from 'frontend-fns';
+import { uid, IS_BROWSER } from '@swiftcarrot/utils';
 ```
 
 ### Methods
@@ -16,6 +16,7 @@ import { uid, IS_BROWSER } from 'frontend-fns';
 - decodeQueryString
 - decodeLocationSearch
 - hashCode
+- sleep
 
 ### Constants
 
